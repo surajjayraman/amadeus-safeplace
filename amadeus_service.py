@@ -1,8 +1,8 @@
 from amadeus import Client, ResponseError
 def safety_rated_locations():
     amadeus = Client(
-        client_id='NTLiGAKqRqL4Ha68EImb747XGfOEW959',
-        client_secret='8jZ1lrSvBMwOH3lR'
+        client_id='REPLACE_BY_YOUR_API_KEY',
+        client_secret='REPLACE_BY_YOUR_API_SECRET'
     )
     try:
         amadeus.safety.safety_rated_locations.by_square.get(
