@@ -3,6 +3,7 @@ def safety_rated_locations():
     amadeus = Client(
         client_id=YOUR_CLIENT_ID,
         client_secret=YOUR_CLIENT_SECRET
+        
     )
     try:
         response = amadeus.safety.safety_rated_locations.by_square.get(
